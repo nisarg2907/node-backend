@@ -1,0 +1,20 @@
+versioning
+
+for eg ^4.18.2
+1st part = 4
+2nd part = 18
+3rd part = 2
+
+3rd => Minor fixes(Optional)
+2nd part=> Recommended bug fixes(security fix)
+1st part=>major relase(can break code/major change)
+
+compatible versions
+^4.18.2 => can have anything that starts with 4.18.2 -> <5.0.0
+(Intsall all minor fixes and recommended security fixes)
+
+if version has ~,that means change only the 3rd part not even recommended changes 
+
+you can also give ranges for the version in the package.json
+
+
