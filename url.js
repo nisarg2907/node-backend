@@ -20,6 +20,13 @@ const server = http.createServer((req,res)=>{
                     const user = myurl.query.myName;
                     res.end(`hello ${user} bhai`);
                 break;
+                case "/signup":
+                  if(req.method==="GET")res.end("This is all the data andyou can get it");
+                  if(req.method==="POST"){
+                    // db query to post data
+                    res.end("success");
+                  }
+                break;
               
         
             default:
